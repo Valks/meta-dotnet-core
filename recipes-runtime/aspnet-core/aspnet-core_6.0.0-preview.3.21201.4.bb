@@ -4,5 +4,5 @@
 # Copyright Richard Dunkley 2021
 ###################################################################################################
 
-require recipes-runtime/aspnet-core/aspnet-core_6.0.0.inc
+require recipes-runtime/aspnet-core/aspnet-core_6.0.0-preview.3.21201.4.inc
 require recipes-runtime/aspnet-core/aspnet-core_6.x.x.inc
