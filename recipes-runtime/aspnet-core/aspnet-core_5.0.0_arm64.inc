@@ -1,5 +1,5 @@
 ###################################################################################################
-# Contains the URL and checksums to download version 3.1.8 of the ARM 64-bit ASP .Net Core runtime
+# Contains the URL and checksums to download version 5.0.0 of the ARM 64-bit ASP .Net Core runtime
 # from Microsoft.
 # Copyright Richard Dunkley 2020
 ###################################################################################################
