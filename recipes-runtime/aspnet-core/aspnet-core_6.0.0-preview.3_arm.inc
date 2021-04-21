@@ -1,5 +1,5 @@
 ###################################################################################################
-# Contains the URL and checksums to download version 6.0.0-preview.3.21201.4 of the ARM ASP .Net Core runtime from
+# Contains the URL and checksums to download version 6.0.0-preview.3 of the ARM ASP .Net Core runtime from
 # Microsoft.
 # Copyright Richard Dunkley 2021
 ###################################################################################################
@@ -9,3 +9,5 @@ SRC_URI = "https://download.visualstudio.microsoft.com/download/pr/3f3fc6ad-ec33
 SRC_URI[md5sum] = "11708b6e14182f0ca06064798e845125"
 SRC_URI[sha256sum] = "0b89a86243ebaac449ef8e426aa7407c07a55810f4aca0c8cdfb605108648c78"
 
+DOTNET_CORE_VERSION = "6.0.0-preview.3.21201.4"
+ASPNET_CORE_VERSION = "6.0.0-preview.3.21201.13"

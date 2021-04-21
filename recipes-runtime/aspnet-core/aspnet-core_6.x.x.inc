@@ -38,37 +38,37 @@ do_install_prepend () {
 	install -m 0644 ${S}/LICENSE.txt ${D}${datadir}/dotnet/
 	install -m 0644 ${S}/ThirdPartyNotices.txt ${D}${datadir}/dotnet/
 
-	install -d ${D}${datadir}/dotnet/host/fxr/${PV}/
-	install -m 0755 ${S}/host/fxr/${PV}/libhostfxr.so ${D}${datadir}/dotnet/host/fxr/${PV}/
+	install -d ${D}${datadir}/dotnet/host/fxr/${DOTNET_CORE_VERSION}/
+	install -m 0755 ${S}/host/fxr/${DOTNET_CORE_VERSION}/libhostfxr.so ${D}${datadir}/dotnet/host/fxr/${DOTNET_CORE_VERSION}/
 
-	install -d ${D}${datadir}/dotnet/shared/Microsoft.AspNetCore.App/${PV}/
+	install -d ${D}${datadir}/dotnet/shared/Microsoft.AspNetCore.App/${ASPNET_CORE_VERSION}/
 	
-	install -m 0644 ${S}/shared/Microsoft.AspNetCore.App/${PV}/.version ${D}${datadir}/dotnet/shared/Microsoft.AspNetCore.App/${PV}/.version
-	for file in ${S}/shared/Microsoft.AspNetCore.App/${PV}/*.dll; do
-		install -m 0644 "$file" ${D}${datadir}/dotnet/shared/Microsoft.AspNetCore.App/${PV}/
+	install -m 0644 ${S}/shared/Microsoft.AspNetCore.App/${ASPNET_CORE_VERSION}/.version ${D}${datadir}/dotnet/shared/Microsoft.AspNetCore.App/${ASPNET_CORE_VERSION}/.version
+	for file in ${S}/shared/Microsoft.AspNetCore.App/${ASPNET_CORE_VERSION}/*.dll; do
+		install -m 0644 "$file" ${D}${datadir}/dotnet/shared/Microsoft.AspNetCore.App/${ASPNET_CORE_VERSION}/
 	done
-	for file in ${S}/shared/Microsoft.AspNetCore.App/${PV}/*.json; do
-		install -m 0644 "$file" ${D}${datadir}/dotnet/shared/Microsoft.AspNetCore.App/${PV}/
+	for file in ${S}/shared/Microsoft.AspNetCore.App/${ASPNET_CORE_VERSION}/*.json; do
+		install -m 0644 "$file" ${D}${datadir}/dotnet/shared/Microsoft.AspNetCore.App/${ASPNET_CORE_VERSION}/
 	done
-	for file in ${S}/shared/Microsoft.AspNetCore.App/${PV}/*.txt; do
-		install -m 0644 "$file" ${D}${datadir}/dotnet/shared/Microsoft.AspNetCore.App/${PV}/
+	for file in ${S}/shared/Microsoft.AspNetCore.App/${ASPNET_CORE_VERSION}/*.txt; do
+		install -m 0644 "$file" ${D}${datadir}/dotnet/shared/Microsoft.AspNetCore.App/${ASPNET_CORE_VERSION}/
 	done
 
-	install -d ${D}${datadir}/dotnet/shared/Microsoft.NETCore.App/${PV}/
+	install -d ${D}${datadir}/dotnet/shared/Microsoft.NETCore.App/${DOTNET_CORE_VERSION}/
 	
-	install -m 0644 ${S}/shared/Microsoft.NETCore.App/${PV}/.version ${D}${datadir}/dotnet/shared/Microsoft.NETCore.App/${PV}/.version
-	install -m 0644 ${S}/shared/Microsoft.NETCore.App/${PV}/createdump ${D}${datadir}/dotnet/shared/Microsoft.NETCore.App/${PV}/createdump
-	for file in ${S}/shared/Microsoft.NETCore.App/${PV}/*.so; do
-		install -m 0755 "$file" ${D}${datadir}/dotnet/shared/Microsoft.NETCore.App/${PV}/
+	install -m 0644 ${S}/shared/Microsoft.NETCore.App/${DOTNET_CORE_VERSION}/.version ${D}${datadir}/dotnet/shared/Microsoft.NETCore.App/${DOTNET_CORE_VERSION}/.version
+	install -m 0644 ${S}/shared/Microsoft.NETCore.App/${DOTNET_CORE_VERSION}/createdump ${D}${datadir}/dotnet/shared/Microsoft.NETCore.App/${DOTNET_CORE_VERSION}/createdump
+	for file in ${S}/shared/Microsoft.NETCore.App/${DOTNET_CORE_VERSION}/*.so; do
+		install -m 0755 "$file" ${D}${datadir}/dotnet/shared/Microsoft.NETCore.App/${DOTNET_CORE_VERSION}/
 	done
-	for file in ${S}/shared/Microsoft.NETCore.App/${PV}/*.dll; do
-		install -m 0644 "$file" ${D}${datadir}/dotnet/shared/Microsoft.NETCore.App/${PV}/
+	for file in ${S}/shared/Microsoft.NETCore.App/${DOTNET_CORE_VERSION}/*.dll; do
+		install -m 0644 "$file" ${D}${datadir}/dotnet/shared/Microsoft.NETCore.App/${DOTNET_CORE_VERSION}/
 	done
-	for file in ${S}/shared/Microsoft.NETCore.App/${PV}/*.json; do
-		install -m 0644 "$file" ${D}${datadir}/dotnet/shared/Microsoft.NETCore.App/${PV}/
+	for file in ${S}/shared/Microsoft.NETCore.App/${DOTNET_CORE_VERSION}/*.json; do
+		install -m 0644 "$file" ${D}${datadir}/dotnet/shared/Microsoft.NETCore.App/${DOTNET_CORE_VERSION}/
 	done
-	for file in ${S}/shared/Microsoft.NETCore.App/${PV}/*.a; do
-		install -m 0644 "$file" ${D}${datadir}/dotnet/shared/Microsoft.NETCore.App/${PV}/
+	for file in ${S}/shared/Microsoft.NETCore.App/${DOTNET_CORE_VERSION}/*.a; do
+		install -m 0644 "$file" ${D}${datadir}/dotnet/shared/Microsoft.NETCore.App/${DOTNET_CORE_VERSION}/
 	done
 
 	install -d ${D}/usr/local/share
