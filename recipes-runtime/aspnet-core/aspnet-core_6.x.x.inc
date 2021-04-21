@@ -67,9 +67,11 @@ do_install_prepend () {
 	for file in ${S}/shared/Microsoft.NETCore.App/${DOTNET_CORE_VERSION}/*.json; do
 		install -m 0644 "$file" ${D}${datadir}/dotnet/shared/Microsoft.NETCore.App/${DOTNET_CORE_VERSION}/
 	done
+	shopt -s nullglob
 	for file in ${S}/shared/Microsoft.NETCore.App/${DOTNET_CORE_VERSION}/*.a; do
 		install -m 0644 "$file" ${D}${datadir}/dotnet/shared/Microsoft.NETCore.App/${DOTNET_CORE_VERSION}/
 	done
+	shopt -u nullglob
 
 	install -d ${D}/usr/local/share
 
