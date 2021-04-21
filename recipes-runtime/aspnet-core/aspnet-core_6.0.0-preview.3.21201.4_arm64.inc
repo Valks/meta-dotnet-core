@@ -1,5 +1,5 @@
 ###################################################################################################
-# Contains the URL and checksums to download version 6.0.0 of the ARM 64-bit ASP .Net Core runtime
+# Contains the URL and checksums to download version 6.0.0-preview.3.21201.4 of the ARM 64-bit ASP .Net Core runtime
 # from Microsoft.
 # Copyright Richard Dunkley 2021
 ###################################################################################################
