@@ -5,5 +5,5 @@
 ###################################################################################################
 SRC_URI = "https://download.visualstudio.microsoft.com/download/pr/57235015-0fcd-4785-a550-8fce2b489f81/303184bd837591ec206d06dc64284c3b/aspnetcore-runtime-6.0.0-preview.3.21201.13-linux-x64.tar.gz"
 
-SRC_URI[md5sum] = "0F26E196CFCDE6C2734026713B8F2FF8"
-SRC_URI[sha256sum] = "647773546875B9827F14A90520C73EB2B80AACD6F072356FA52DE1BEC8E8C4A5"
+SRC_URI[md5sum] = "0f26e196cfcde6c2734026713b8f2ff8"
+SRC_URI[sha256sum] = "647773546875b9827f14a90520c73eb2b80aacd6f072356fa52de1bec8e8c4a5"
